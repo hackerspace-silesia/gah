@@ -1,54 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Gah | DigUp Startups Serious Games Hackaton</title>
 
-        <link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Gah | DigUp Startups Serious Games Hackaton</title>
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-        <div id="splash">
-            <div id="box">
-                <h1>Lashkar Gah</h1>
+<body>
 
-                <dl class="clearfix">
-                    <dt>Localion</dt><dd>Lashkar Gah, Helmand, Afganistan</dd>
-                    <dt>Date</dt><dd>August, 2014</dd>
-                </dl>
+    <div id="splash">
+        <div id="box">
+            <h1>Lashkar Gah</h1>
 
-                <div style="text-align:center;margin-top:48px;clear: both;">
-                    <a href="#" id="start" class="button button-primary">START</a>
-                </div>
+            <dl class="clearfix">
+                <dt>Localion</dt>
+                <dd>Lashkar Gah, Helmand, Afganistan</dd>
+                <dt>Date</dt>
+                <dd>August, 2014</dd>
+            </dl>
+
+            <div style="text-align:center;margin-top:48px;clear: both;">
+                <a href="#" id="start" class="button button-primary">START</a>
             </div>
-
-            <div id="map"></div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            function initialize() {
-                var map_element = document.getElementById('map');
-                map_element.style.width = window.outerWidth;
-                map_element.style.height = window.outerHeight;
+        <div id="map"></div>
+    </div>
 
-                var map_canvas = map_element;
-                var map_options = {
-                    center: new google.maps.LatLng(31.5869047, 64.3101938),
-                    zoom: 13,
-                    mapTypeId: google.maps.MapTypeId.HYBRID
-                };
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="bower_components/phaser-official/build/phaser.min.js"></script>
+    <script type="text/javascript" src="app/player.js"></script>
+    <script type="text/javascript" src="app/main.js"></script>
+</body>
 
-                var map = new google.maps.Map(map_canvas, map_options);
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-
-            $('#start').click(function () {
-                $('#splash').remove();
-            });
-        </script>
-    </body>
 </html>
