@@ -43,6 +43,8 @@ function StartGame() {
     function preload() {
         game.load.atlas('player', 'assets/images/tanks.png', 'assets/data/tanks.json');
         game.load.image('background', 'assets/images/scorched_earth.png');
+        game.load.spritesheet('button', 'assets/images/button_sprite_sheet.png', 193, 71);
+
     }
 
     function create() {
@@ -60,7 +62,8 @@ function StartGame() {
         game.camera.deadzone = new Phaser.Rectangle(150, 150, 500, 300);
         game.camera.focusOnXY(0, 0);
 
-
+        conv = new Conversation(game, "moj tekst", function() {}, function() {});
+        conv.show_message();
     }
 
     function update() {

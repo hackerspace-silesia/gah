@@ -2,6 +2,7 @@ Player = (function() {
     function Player(game, cursors) {
         //  The base of our player
         this.game = game;
+        this.cursors = cursors;
         this.sprite = this.game.add.sprite(0, 0, 'sprite', 'tank1');
         this.sprite.anchor.setTo(0.5, 0.5);
         this.sprite.animations.add('move', ['tank1', 'tank2', 'tank3', 'tank4', 'tank5', 'tank6'], 20, true);
@@ -13,7 +14,6 @@ Player = (function() {
 
         this.sprite.bringToTop();
 
-        this.cursors = cursors;
         this.currentSpeed = 0;
     };
 
