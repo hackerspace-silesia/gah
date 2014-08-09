@@ -43,7 +43,8 @@ function StartGame() {
 
     function preload() {
         game.load.tilemap('gah_map', 'assets/maps/enter-city.json', null, Phaser.Tilemap.TILED_JSON);
-        game.load.image('player', 'assets/images/van.png');
+        game.load.image('Desert', 'assets/maps/tmw_desert_spacing.png');
+        game.load.image('Road', 'assets/maps/roads.png');
     }
 
     function create() {
@@ -51,7 +52,9 @@ function StartGame() {
         //  Resize our game world to be a 2000 x 2000 square
         game.world.setBounds(-1000, -1000, 2000, 2000);
         map = game.add.tilemap('gah_map');
-        map.addTilesetImage('Desert', '');
+        map.addTilesetImage('Desert', 'Desert');
+        map.addTilesetImage('Road', 'Road');
+
         layer = map.createLayer('Ground');
         layer.resizeWorld();
         //  Our tiled scrolling background
