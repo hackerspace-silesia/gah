@@ -24,6 +24,9 @@ $('#start').click(function() {
 
 function StartGame() {
     var background;
+    var map;
+    var tileset;
+    var layer;
     var player;
     var currentSpeed = 0;
     var cursors;
@@ -32,29 +35,40 @@ function StartGame() {
         'height': window.innerHeight
     }
 
-
-
     var game = new Phaser.Game(game_bounds.width, game_bounds.height, Phaser.AUTO, 'phaser-example', {
         preload: preload,
         create: create,
-        update: update,
+        update: update
     });
 
     function preload() {
-        game.load.atlas('player', 'assets/images/tanks.png', 'assets/data/tanks.json');
-        game.load.image('background', 'assets/images/scorched_earth.png');
+        game.load.tilemap('gah_map', 'assets/maps/enter-city.json', null, Phaser.Tilemap.TILED_JSON);
+        game.load.image('player', 'assets/images/van.png');
     }
 
     function create() {
 
         //  Resize our game world to be a 2000 x 2000 square
         game.world.setBounds(-1000, -1000, 2000, 2000);
-
+        map = game.add.tilemap('gah_map');
+        map.addTilesetImage('Desert', '');
+        layer = map.createLayer('Ground');
+        layer.resizeWorld();
         //  Our tiled scrolling background
-        background = game.add.tileSprite(0, 0, game_bounds.width, game_bounds.height, 'earth');
-        background.fixedToCamera = true;
+        map.fixedToCamera = true;
+
         cursors = game.input.keyboard.createCursorKeys();
-        player = new Player(game, cursors);
+
+//        player = game.add.sprite(32, 32, 'player');
+//        game.physics.startSystem(Phaser.Physics.ARCADE);
+//        game.physics.enable(player);
+//        game.physics.arcade.gravity.y = 250;
+//        player.body.bounce.y = 0.2;
+//        player.body.linearDamping = 1;
+//        player.body.collideWorldBounds = true;
+//        game.camera.follow(p);
+//        player = new Player(game, cursors);
+
         //  This will force it to decelerate and limit its speed
         game.camera.follow(player.sprite);
         game.camera.deadzone = new Phaser.Rectangle(150, 150, 500, 300);
@@ -64,9 +78,6 @@ function StartGame() {
     }
 
     function update() {
-        player.move();
-        background.tilePosition.x = -game.camera.x;
-        background.tilePosition.y = -game.camera.y;
-
+//        player.move();
     }
 }
