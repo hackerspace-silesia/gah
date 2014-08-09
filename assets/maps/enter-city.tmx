@@ -3,6 +3,21 @@
  <tileset firstgid="1" source="../tiled-master/examples/desert.tsx"/>
  <tileset firstgid="49" name="Roads" tilewidth="32" tileheight="32">
   <image source="../roads.png" trans="ffffff" width="160" height="96"/>
+  <terraintypes>
+   <terrain name="Road" tile="6"/>
+  </terraintypes>
+  <tile id="0" terrain=",,,0"/>
+  <tile id="1" terrain=",,0,0"/>
+  <tile id="2" terrain=",,0,"/>
+  <tile id="3" terrain=",,,0"/>
+  <tile id="4" terrain=",,0,"/>
+  <tile id="5" terrain=",0,,0"/>
+  <tile id="7" terrain="0,,0,"/>
+  <tile id="8" terrain=",0,,"/>
+  <tile id="9" terrain="0,,,"/>
+  <tile id="10" terrain=",0,,"/>
+  <tile id="11" terrain="0,0,,"/>
+  <tile id="12" terrain="0,,,"/>
  </tileset>
  <layer name="Ground" width="50" height="50">
   <data encoding="base64" compression="zlib">
