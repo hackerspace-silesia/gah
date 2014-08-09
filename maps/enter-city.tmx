@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="../tiled-master/examples/desert.tsx"/>
+ <tileset firstgid="49" name="Roads" tilewidth="32" tileheight="32">
+  <image source="../roads.png" trans="ffffff" width="160" height="96"/>
+ </tileset>
+ <layer name="Ground" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztWttOwzAM7eAD0NgTTKoKg3UwLhOMOx/Hp5NKi2QsO7aTpksnHo6mJU7SYzt2nLauqqpW4GQHjWzJKIVHu/tdEn0N+j9xOAI4BjwmqD3mWVbMuh7UM8J2rh9j6nAKMAM8pqide0bLehpO/rcFfa1iPOx/cHgDeBbGPCr1bOGJ5Tu/0PqDH/eKeLwT/EPPtAr0bRiZkH6dXn86v5jtbNKiMXDsErRhHh8OT4VBYxfMo0RIPjxWHpSPjpkHjGmYx9bhOzNejGtif9pUsl918erM4RxgTszVEG01MRZjLqzZ9eNcLdmC43HhcAmwAPKhOFsTYzEWwppdP87VOHdp9rnEA85JcUrlcUfYLybuanlweknlQclLPpXKI4dfaXjE2gPbmtq7Y+AhAa6Vk4f3J+qsOiYeh2IP6z6/cbg1YA3mk8auB7QHJyvlQK28RXcdb83Z/hPNOUT9YV1z3+fUfxwmhqoPckOKJ9w9CBfDpNoidF7RookYY43FKfkxFItjnj2UA/x8OXlQ68H8LN3fUbkc+5iXycXDmkdj7Ab1MJQ9OBtIOqfGac9cOXn0sSco9MVDqr9S4hx1b4P7NDyuqr/nuWsjxxQ7Yh+ynEcxD7yW1VYxPKzvIkrlgYHrW83dXAk8mgz2wHv4PhMP6i536HiV0680MZjjYa3bYwHr/RSU9q4tFLsov/P7v7R3O33ZY9/Q7gucX0rmYcFXtd861lrXpiD22wAPnHtT8kQMuO8yUmX70CWnP07nWF6jy1Ypq62hhoD1XCrhF7YRf44=
+  </data>
+ </layer>
+</map>
