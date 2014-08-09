@@ -3,7 +3,28 @@
  <tileset firstgid="1" source="../tiled-master/examples/desert.tsx"/>
  <layer name="Tile Layer 1" width="63" height="63">
   <data encoding="base64" compression="zlib">
-   eJztmmtTVDEMhquLyEUUXMAduVhERR1u///X2TN7MhNC02vadMf98MwAu6fJm6SXk3JtjLku5Mbx3XFbMcZoWObvdxnavzX073eDMX9lapDOOxfzGv9b4dNe67801B+pegzlvVcMWs6tUu3S/tK1RhtOO815z3koFSeqQSrvIVqs4ZJAzY6wv8fyk0NOvVgEjUureJciXU8074/CsR2ZEWo+FvNW6yxov3d8VeTCrOfd+0xytNIYgnZtbmftnzKRyPsPx18FfhLtXwjvZo07zO+crpR1tWS+75p1ve1Vxt1n/43j7czC8XHWejzrwb9L28b2F8wz1B/sbwwYkztf7DsOZg49Wltr30e2ffVD7WN/YxxG7J84zjpotx7bFmm5ZHImof0pEPtJ/2fH0nFu1vN61TnvnN8h7aez38AZM0bOeoPrrrV2iDtlydg/Id/BayEda5lgP4SEduuxDT7HOJrtfyj8HNhjtNMzyLSWcvMtROw8iG3DuL04Tsj7pPvKrOfKLoqrdM3DutKLVYJ2vOfg3LRY50spfT8N2b8j2nFuVsz3S21bz+cp71Chsw13PkrRjvN+aV6fi2pzU5r3J/Pav9hZxhfHVO2+/bEWiZoH/6a9Pbaf59qn++do2vE5LLafS9uv6Rk8GN3eRa197b6DJr36C1r9jRCS87/VmrCp1GrvcZ9V2ze36Gd8Fki9p+51n+qz3SofrWq+9R2HRC605rvWvfwI2kegRPsIOUslNPc3Me+2Qd5T+1oTz4njj1wjpX2tWL+uNmY5tVsa49y+FtyZ1fTxRpkr3Hynd2cQe6gNuC9MBWKGtVNfNGse6576p74eha+PzPW1FpHncuu6tXaqG99f0btTGIPra8We0yB0no/157AGm/AMd+84AjXaY3mPPYd7oiNo5+7roD/n0xB6JvScNrnnOnpv7Nuvffmkz/Ug9c5O+3+xfPj8pWcYK5D3EWldF3+Mfk9Sq1f5v9DynUp7v9oURn6vrcVuiG1NP2uRfvfp/S615SV2AB9S1qTcOtnW1ZYY/wBmpri8
+   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
   </data>
  </layer>
+ <objectgroup name="collision-1" width="63" height="63">
+  <object x="653" y="586" width="196" height="73"/>
+ </objectgroup>
+ <objectgroup name="collision-2" width="63" height="63">
+  <object x="1034" y="524" width="360" height="134"/>
+ </objectgroup>
+ <objectgroup name="collision-3" width="63" height="63">
+  <object x="1644" y="492" width="101" height="104"/>
+ </objectgroup>
+ <objectgroup name="collision-4" width="63" height="63">
+  <object x="1768" y="680" width="108" height="203"/>
+ </objectgroup>
+ <objectgroup name="collision-5" width="63" height="63">
+  <object x="1036" y="812" width="231" height="103"/>
+ </objectgroup>
+ <objectgroup name="collision-6" width="63" height="63">
+  <object x="1326" y="1420" width="260" height="135"/>
+ </objectgroup>
+ <objectgroup name="collision-7" width="63" height="63">
+  <object x="909" y="1391" width="229" height="163"/>
+ </objectgroup>
 </map>
