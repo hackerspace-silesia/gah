@@ -45,6 +45,7 @@ function StartGame() {
         game.load.tilemap('gah_map', 'assets/maps/enter-city.json', null, Phaser.Tilemap.TILED_JSON);
         game.load.image('Desert', 'assets/maps/tmw_desert_spacing.png');
         game.load.image('Road', 'assets/maps/roads.png');
+        game.load.spritesheet('player', 'assets/images/van.png', 32, 32);
     }
 
     function create() {
@@ -53,34 +54,21 @@ function StartGame() {
         game.world.setBounds(-1000, -1000, 2000, 2000);
         map = game.add.tilemap('gah_map');
         map.addTilesetImage('Desert', 'Desert');
-        map.addTilesetImage('Road', 'Road');
+        map.addTilesetImage('Roads', 'Road');
 
         layer = map.createLayer('Ground');
         layer.resizeWorld();
-        //  Our tiled scrolling background
-        map.fixedToCamera = true;
 
         cursors = game.input.keyboard.createCursorKeys();
-
-//        player = game.add.sprite(32, 32, 'player');
-//        game.physics.startSystem(Phaser.Physics.ARCADE);
-//        game.physics.enable(player);
-//        game.physics.arcade.gravity.y = 250;
-//        player.body.bounce.y = 0.2;
-//        player.body.linearDamping = 1;
-//        player.body.collideWorldBounds = true;
-//        game.camera.follow(p);
-//        player = new Player(game, cursors);
+        player = new Player(game, cursors);
 
         //  This will force it to decelerate and limit its speed
         game.camera.follow(player.sprite);
         game.camera.deadzone = new Phaser.Rectangle(150, 150, 500, 300);
         game.camera.focusOnXY(0, 0);
-
-
     }
 
     function update() {
-//        player.move();
+          player.move()
     }
 }
