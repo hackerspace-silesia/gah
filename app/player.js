@@ -1,11 +1,13 @@
 Player = (function() {
+    var bodies = 0;
+
     function Player(game, cursors) {
         //  The base of our player
         this.game = game;
         this.cursors = cursors;
         this.sprite = this.game.add.sprite(500, 980, 'player');
         this.sprite.anchor.setTo(0.5, 0.5);
-        //        this.sprite.animations.add('move', ['tank1', 'tank2', 'tank3', 'tank4', 'tank5', 'tank6'], 20, true);
+        this.sprite.angle += 90;
 
         this.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
         this.sprite.body.drag.set(0.2);
@@ -19,12 +21,29 @@ Player = (function() {
     };
 
     Player.prototype.move = function() {
+        var game = this.game;
+
+        function collisionHandler(sprite, body) {
+            bodies += 1;
+            game.dead[game.dead.indexOf(body)].kill();
+            game.dead.splice(game.dead.indexOf(body));
+
+            if (bodies == 2) {
+                alert("You saved people!");
+            }
+
+        }
 
         var tile = this.map.getTileWorldXY(this.sprite.x, this.sprite.y);
         if (this.acceptedTiles.indexOf(tile.index) === -1) {
 
             alert("Booom! You are dead! Don't drift away from road." + tile.index);
             window.location.reload();
+        }
+
+
+        for (var i = 0; i < this.game.dead.length; i++) {
+            this.game.physics.arcade.collide(this.sprite, this.game.dead[i], collisionHandler);
         }
 
         if (this.cursors.left.isDown) {
