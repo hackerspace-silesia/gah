@@ -13,10 +13,10 @@
         }, 
         {
          "height":63,
-         "name":"collision-1",
+         "name":"collision",
          "objects":[
                 {
-                 "height":73,
+                 "height":162,
                  "name":"",
                  "properties":
                     {
@@ -24,23 +24,12 @@
                     },
                  "type":"",
                  "visible":true,
-                 "width":196,
-                 "x":653,
-                 "y":586
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "width":63,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "height":63,
-         "name":"collision-2",
-         "objects":[
+                 "width":226,
+                 "x":910,
+                 "y":1391
+                }, 
                 {
-                 "height":134,
+                 "height":130,
                  "name":"",
                  "properties":
                     {
@@ -48,23 +37,25 @@
                     },
                  "type":"",
                  "visible":true,
-                 "width":360,
-                 "x":1034,
-                 "y":524
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "width":63,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "height":63,
-         "name":"collision-3",
-         "objects":[
+                 "width":259,
+                 "x":1327,
+                 "y":1424
+                }, 
                 {
-                 "height":104,
+                 "height":102,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":228,
+                 "x":1038,
+                 "y":813
+                }, 
+                {
+                 "height":197,
                  "name":"",
                  "properties":
                     {
@@ -73,22 +64,11 @@
                  "type":"",
                  "visible":true,
                  "width":101,
-                 "x":1644,
-                 "y":492
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "width":63,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "height":63,
-         "name":"collision-4",
-         "objects":[
+                 "x":1773,
+                 "y":686
+                }, 
                 {
-                 "height":203,
+                 "height":131,
                  "name":"",
                  "properties":
                     {
@@ -96,23 +76,12 @@
                     },
                  "type":"",
                  "visible":true,
-                 "width":108,
-                 "x":1768,
-                 "y":680
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "width":63,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "height":63,
-         "name":"collision-5",
-         "objects":[
+                 "width":356,
+                 "x":1038,
+                 "y":526
+                }, 
                 {
-                 "height":103,
+                 "height":100,
                  "name":"",
                  "properties":
                     {
@@ -120,23 +89,12 @@
                     },
                  "type":"",
                  "visible":true,
-                 "width":231,
-                 "x":1036,
-                 "y":812
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "width":63,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "height":63,
-         "name":"collision-6",
-         "objects":[
+                 "width":97,
+                 "x":1647,
+                 "y":493
+                }, 
                 {
-                 "height":135,
+                 "height":70,
                  "name":"",
                  "properties":
                     {
@@ -144,33 +102,9 @@
                     },
                  "type":"",
                  "visible":true,
-                 "width":260,
-                 "x":1326,
-                 "y":1420
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "width":63,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "height":63,
-         "name":"collision-7",
-         "objects":[
-                {
-                 "height":163,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":229,
-                 "x":909,
-                 "y":1391
+                 "width":197,
+                 "x":653,
+                 "y":589
                 }],
          "opacity":1,
          "type":"objectgroup",
