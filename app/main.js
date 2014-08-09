@@ -42,7 +42,7 @@ function StartGame() {
     function preload() {
         game.load.tilemap('gah_map', 'assets/maps/enter-city-2.json', null, Phaser.Tilemap.TILED_JSON);
         game.load.image('Desert', 'assets/maps/tmw_desert_spacing.png');
-        game.load.image('player', 'assets/images/car.png', 32, 32);
+        game.load.image('player', 'assets/images/car.png');
         game.load.spritesheet('button', 'assets/images/button_sprite_sheet.png', 193, 71);
     }
 
