@@ -3,8 +3,9 @@ Player = (function() {
         //  The base of our player
         this.game = game;
         this.cursors = cursors;
-        this.sprite = this.game.add.sprite(200, 100, 'player');
+        this.sprite = this.game.add.sprite(550, 100, 'player');
         this.sprite.anchor.setTo(0.5, 0.5);
+        this.sprite.angle += 90;
 //        this.sprite.animations.add('move', ['tank1', 'tank2', 'tank3', 'tank4', 'tank5', 'tank6'], 20, true);
 
         this.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
