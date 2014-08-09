@@ -45,6 +45,7 @@ function StartGame() {
         game.load.image('player', 'assets/images/car.png');
         game.load.image('dead', 'assets/images/trup-1.png');
         game.load.image('dead2', 'assets/images/trup-2.png');
+        game.load.image('hospital', 'assets/images/red_cross.png');
         game.load.spritesheet('button', 'assets/images/button_sprite_sheet.png', 193, 71);
     }
 
@@ -67,8 +68,10 @@ function StartGame() {
         game.camera.deadzone = new Phaser.Rectangle(150, 150, 500, 300);
         game.camera.focusOnXY(0, 0);
         game.dead = [this.game.add.sprite(300, 980, "dead"), this.game.add.sprite(400, 550, "dead2")]
+        this.game.hospital = this.game.add.sprite(650, 250, "hospital")
         this.game.physics.enable(game.dead[0], Phaser.Physics.ARCADE);
         this.game.physics.enable(game.dead[1], Phaser.Physics.ARCADE);
+        this.game.physics.enable(game.hospital, Phaser.Physics.ARCADE);
 
         //        conv = new Conversation(game, "moj tekst", function() {}, function() {});
         //       conv.show_message(); === === = >>> >>> > e8a17f4f9bb9dd7ded4ee162781d6f1ef6b8b6e8

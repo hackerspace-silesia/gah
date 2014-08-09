@@ -27,11 +27,11 @@ Player = (function() {
             bodies += 1;
             game.dead[game.dead.indexOf(body)].kill();
             game.dead.splice(game.dead.indexOf(body));
+        }
 
-            if (bodies == 2) {
-                alert("You saved people!");
-            }
-
+        function theEnd() {
+            alert("You finished simulation!");
+            window.location.reload();
         }
 
         var tile = this.map.getTileWorldXY(this.sprite.x, this.sprite.y);
@@ -40,12 +40,15 @@ Player = (function() {
             alert("Booom! You are dead! Don't drift away from road." + tile.index);
             window.location.reload();
         }
+        if (bodies == 2) {
+            this.game.physics.arcade.collide(this.sprite, game.hospital, theEnd);
 
+        } else {
 
-        for (var i = 0; i < this.game.dead.length; i++) {
-            this.game.physics.arcade.collide(this.sprite, this.game.dead[i], collisionHandler);
+            for (var i = 0; i < this.game.dead.length; i++) {
+                this.game.physics.arcade.collide(this.sprite, this.game.dead[i], collisionHandler);
+            }
         }
-
         if (this.cursors.left.isDown) {
             this.sprite.angle -= 4;
         } else if (this.cursors.right.isDown) {
