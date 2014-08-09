@@ -40,22 +40,21 @@ function StartGame() {
     });
 
     function preload() {
-        game.load.tilemap('gah_map', 'assets/maps/enter-city.json', null, Phaser.Tilemap.TILED_JSON);
+        game.load.tilemap('gah_map', 'assets/maps/enter-city-2.json', null, Phaser.Tilemap.TILED_JSON);
         game.load.image('Desert', 'assets/maps/tmw_desert_spacing.png');
-        game.load.image('Road', 'assets/maps/roads.png');
-        game.load.spritesheet('player', 'assets/images/car.png', 100, 50);
+        game.load.spritesheet('player', 'assets/images/van.png', 32, 32);
         game.load.spritesheet('button', 'assets/images/button_sprite_sheet.png', 193, 71);
     }
 
     function create() {
 
         //  Resize our game world to be a 2000 x 2000 square
-        game.world.setBounds(-1000, -1000, 2000, 2000);
+        game.world.setBounds(-1000, -1000, 2016, 2016);
         map = game.add.tilemap('gah_map');
         map.addTilesetImage('Desert', 'Desert');
         map.addTilesetImage('Roads', 'Road');
 
-        layer = map.createLayer('Ground');
+        layer = map.createLayer('Tile Layer 1');
         layer.resizeWorld();
 
         cursors = game.input.keyboard.createCursorKeys();
@@ -65,8 +64,9 @@ function StartGame() {
         game.camera.follow(player.sprite);
         game.camera.deadzone = new Phaser.Rectangle(150, 150, 500, 300);
         game.camera.focusOnXY(0, 0);
-        conv = new Conversation(game, "moj tekst", function() {}, function() {});
-        conv.show_message();
+
+        //        conv = new Conversation(game, "moj tekst", function() {}, function() {});
+        //       conv.show_message(); === === = >>> >>> > e8a17f4f9bb9dd7ded4ee162781d6f1ef6b8b6e8
     }
 
     function update() {
