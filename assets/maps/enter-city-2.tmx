@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="63" height="63" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="../tiled-master/examples/desert.tsx"/>
+ <layer name="Tile Layer 1" width="63" height="63">
+  <data encoding="base64" compression="zlib">
+   eJztmmtTVDEMhquLyEUUXMAduVhERR1u///X2TN7MhNC02vadMf98MwAu6fJm6SXk3JtjLku5Mbx3XFbMcZoWObvdxnavzX073eDMX9lapDOOxfzGv9b4dNe67801B+pegzlvVcMWs6tUu3S/tK1RhtOO815z3koFSeqQSrvIVqs4ZJAzY6wv8fyk0NOvVgEjUureJciXU8074/CsR2ZEWo+FvNW6yxov3d8VeTCrOfd+0xytNIYgnZtbmftnzKRyPsPx18FfhLtXwjvZo07zO+crpR1tWS+75p1ve1Vxt1n/43j7czC8XHWejzrwb9L28b2F8wz1B/sbwwYkztf7DsOZg49Wltr30e2ffVD7WN/YxxG7J84zjpotx7bFmm5ZHImof0pEPtJ/2fH0nFu1vN61TnvnN8h7aez38AZM0bOeoPrrrV2iDtlydg/Id/BayEda5lgP4SEduuxDT7HOJrtfyj8HNhjtNMzyLSWcvMtROw8iG3DuL04Tsj7pPvKrOfKLoqrdM3DutKLVYJ2vOfg3LRY50spfT8N2b8j2nFuVsz3S21bz+cp71Chsw13PkrRjvN+aV6fi2pzU5r3J/Pav9hZxhfHVO2+/bEWiZoH/6a9Pbaf59qn++do2vE5LLafS9uv6Rk8GN3eRa197b6DJr36C1r9jRCS87/VmrCp1GrvcZ9V2ze36Gd8Fki9p+51n+qz3SofrWq+9R2HRC605rvWvfwI2kegRPsIOUslNPc3Me+2Qd5T+1oTz4njj1wjpX2tWL+uNmY5tVsa49y+FtyZ1fTxRpkr3Hynd2cQe6gNuC9MBWKGtVNfNGse6576p74eha+PzPW1FpHncuu6tXaqG99f0btTGIPra8We0yB0no/157AGm/AMd+84AjXaY3mPPYd7oiNo5+7roD/n0xB6JvScNrnnOnpv7Nuvffmkz/Ug9c5O+3+xfPj8pWcYK5D3EWldF3+Mfk9Sq1f5v9DynUp7v9oURn6vrcVuiG1NP2uRfvfp/S615SV2AB9S1qTcOtnW1ZYY/wBmpri8
+  </data>
+ </layer>
+</map>
