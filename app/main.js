@@ -58,6 +58,8 @@ function StartGame() {
 
         cursors = game.input.keyboard.createCursorKeys();
         player = new Player(game, cursors);
+        player.layer = layer
+        player.map = map
         //  This will force it to decelerate and limit its speed
         game.camera.follow(player.sprite);
         game.camera.deadzone = new Phaser.Rectangle(150, 150, 500, 300);
