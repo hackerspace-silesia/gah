@@ -26,7 +26,7 @@ Player = (function() {
         function collisionHandler(sprite, body) {
             bodies += 1;
             game.dead[game.dead.indexOf(body)].kill();
-            game.dead.splice(game.dead.indexOf(body));
+            game.dead.splice(game.dead.indexOf(body), 1);
         }
 
         function theEnd() {
