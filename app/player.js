@@ -3,7 +3,7 @@ Player = (function() {
         //  The base of our player
         this.game = game;
         this.cursors = cursors;
-        this.sprite = this.game.add.sprite(0, 0, 'sprite', 'tank1');
+        this.sprite = this.game.add.sprite(000, 000, 'sprite', 'tank1');
         this.sprite.anchor.setTo(0.5, 0.5);
         this.sprite.animations.add('move', ['tank1', 'tank2', 'tank3', 'tank4', 'tank5', 'tank6'], 20, true);
 
@@ -26,7 +26,16 @@ Player = (function() {
 
         if (this.cursors.up.isDown) {
             //  The speed we'll travel at
-            this.currentSpeed = 200;
+            if (this.currentSpeed < 300) {
+                this.currentSpeed += 25;
+            }
+        } else if (this.cursors.down.isDown) {
+            if (this.currentSpeed > 0) {
+                this.currentSpeed -= 20;
+            }
+            if (this.currentSpeed < 20) {
+                this.currentSpeed = 0
+            }
         } else {
             if (this.currentSpeed > 0) {
                 this.currentSpeed -= 2;
