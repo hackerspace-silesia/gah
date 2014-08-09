@@ -167,3 +167,16 @@ dd {
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
+
+.description p{
+    padding-bottom: 10px;
+    line-height: 1.2;
+}
+.description ul{
+    padding-bottom: 10px;
+}
+.description{
+    margin-top: 40px;
+        height: 300px;
+    overflow: auto;
+}
